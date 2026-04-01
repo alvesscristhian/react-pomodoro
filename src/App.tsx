@@ -8,8 +8,11 @@ export function App() {
 
   return (
     // React Fragment: Vira elemento pai como se fosse uma <div>, possibilitando return de dois elementos juntos em um componente
+    // Heading é o componente, os atributos entram como children também
     <>
-      <Heading />
+      <Heading attr={123} attr2="String">
+        Olá mundo
+      </Heading>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis unde
         voluptatum tempora enim vero saepe doloribus libero dicta perferendis.
