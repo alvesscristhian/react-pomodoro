@@ -1,0 +1,15 @@
+.container-fluid {
+  /* Estica a tela inteira */
+  max-width: auto;
+}
+
+.container {
+  /* Alinhar um conteúdo ao centro e limitar a largura da página */
+  max-width: 98rem;
+  margin: 0 auto;
+}
+
+.content {
+  /* Conteudo da página */
+  margin: 3.2rem;
+}

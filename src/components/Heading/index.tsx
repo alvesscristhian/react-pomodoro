@@ -1,5 +1,5 @@
 // Todo css que tiver .module.css são arquivos de escopo, não tendo acesso global
-import styles from "./Heading.module.css";
+import styles from "./styles.module.css";
 
 // Seu tipo é um objeto
 type HeadingProps = {
