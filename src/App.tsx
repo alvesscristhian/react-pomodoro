@@ -10,10 +10,29 @@ import "./styles/theme.css";
 import "./styles/global.css";
 import { DefaultButton } from "./components/DefaultButton";
 import { PlayCircleIcon } from "lucide-react";
+import { Heading } from "./components/Heading";
+import { useState } from "react";
 
 export function App() {
+  // Todos os componentes que usam "numero" saimbam das mudanças de valor
+  // Sempre que usar useState, não vou usar atribuição diretamente
+  // const [numero, setNumero] = useState(() => {
+  //   console.log("lazy initialization");
+  //   return 0;
+  // });
+
+  const [numero, setNumero] = useState(0);
+
+  function handleClick() {
+    // setNumero((prevState) => prevState + 1);
+    setNumero(1);
+  }
+
   return (
     <>
+      <Heading>Número: {numero}</Heading>
+      <button onClick={handleClick}>Aumenta</button>
+
       <Container>
         <Logo />
       </Container>
